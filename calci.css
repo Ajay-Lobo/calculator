@@ -1,123 +1,116 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
-    line-height: .5;
-    background:linear-gradient(to left,#7808f0,#06bdf5);
+    line-height: 1;
+    background: linear-gradient(to left, #000000, #0a202e);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    min-height: 100vh;
 }
 
-.calcis{
-    width:500px;
-   padding-top: 100px;
-   padding-bottom: 100px;
-position: absolute;
-top:20%;
-left: 60%;
-   transform: translate(-50%,-50%,);
-transition:0.25px;
-
-text-align: center;
-}
-#display{
-    border: none;
-    background:white ;
-    border-radius: 30px;
-    width: 250;
-    height:60;
-    font-size: 20;
-    font-family: sans-serif;
-    font-weight: 300;
-    margin: auto;
-    border: 2px solid white;
-    color: black;
-
+.header {
+    color: #ffffff;
+    font-size: 32px;
+    padding: 20px 0; /* Add padding to the top for centering */
 }
 
-.btn{
-    width:50;
-    height: 50;
-    padding-top: -1;
-    border:none;
-    font:  sans-serif;
-    font-size: 20;
-    font-weight: 300;
-    border-radius: 30px;
-    margin: 1.5;
-    cursor: pointer;
-}
-.btn:hover{
-
-    background: rgb(71, 185, 18);
-    }
-
-.desg1{
-    width:50;
-    height: 50;
-    padding-top: -1;
-    border:none;
-    font:  sans-serif;
-    font-size: 20;
-    font-weight: 300;
-    border-radius: 30px;
-    margin: 1.5;
-    transition: 0.25;
-    cursor: pointer;
-
+.calcis {
+    width: 350px;
+    padding: 20px;
+    background: #252525;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px; /* Add some space between the header and the calculator */
 }
 
-.desg1:hover{
 
-background: rgb(0, 255, 179);
+#display {
+  border: none;
+  background: #ffffff;
+  border-radius: 30px;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 10px auto;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
-h1{
-    color:white;
-    margin-top:350px;
-    margin-left: 100px;
-    font-family: sans-serif;
-    font-weight: 700px;
-    font-size: 50;
-}
-.sica{
-    width:50;
-    height: 50;
-    padding-top: -1;
-    border:none;
-    font:  sans-serif;
-    font-size: 20;
-    font-weight: 300;
-    border-radius: 30px;
-    margin: 1.5;
-    transition: 0.25;
-    cursor: pointer;
-    background-color: yellow;
+.btn {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  font: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  background: #444444;
+  color: #ffffff;
 }
 
-.cl{
-    width:50;
-    height: 50;
-    padding-top: -1;
-    border:none;
-    font:  sans-serif;
-    font-size: 20;
-    font-weight: 300;
-    border-radius: 30px;
-    margin: 1.5;
-    transition: 0.25;
-    cursor: pointer;
-    background-color:pink;
-
+.btn:hover {
+  background: #2b2b2b;
 }
-.da{
-    width:50;
-    height: 50;
-    padding-top: -1;
-    border:none;
-    font:  sans-serif;
-    font-size: 20;
-    font-weight: 300;
-    border-radius: 30px;
-    margin: 1.5;
-    transition: 0.25;
-    cursor: pointer;
-    background-color: red;
+
+.desg1 {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  font: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 30px;
+  margin: 10px;
+  transition: 0.25s;
+  cursor: pointer;
+  background: #00b5b3;
+  color: #ffffff;
+}
+
+.desg1:hover {
+  background: #008b87;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.sica,
+.cl,
+.da {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  font: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 30px;
+  margin: 10px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.sica {
+  background-color: #f7e800;
+  color: #000000;
+}
+
+.cl {
+  background-color: #ff6b6b;
+  color: #000000;
+}
+
+.da {
+  background-color: #ff0000;
+  color: #ffffff;
 }
